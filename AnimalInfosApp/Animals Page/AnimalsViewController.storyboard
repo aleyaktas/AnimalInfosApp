@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Animals View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="AnimalsViewController" id="Y6W-OH-hqX" customClass="AnimalsViewController" customModule="AnimalInfosApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1i-sL-uHw">
+                                <rect key="frame" x="0.0" y="59" width="393" height="907"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9mU-64-LUT" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enX-2W-s6X" customClass="CardView" customModule="AnimalInfosApp" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="0.0" width="353" height="200"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="WWr-Ab-OYd"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="enX-2W-s6X" firstAttribute="leading" secondItem="9mU-64-LUT" secondAttribute="leading" constant="20" id="8ym-ui-xdn"/>
+                                            <constraint firstAttribute="trailing" secondItem="enX-2W-s6X" secondAttribute="trailing" constant="20" id="9IR-Xr-C3p"/>
+                                            <constraint firstItem="enX-2W-s6X" firstAttribute="top" secondItem="9mU-64-LUT" secondAttribute="top" id="XZU-mG-aRm"/>
+                                            <constraint firstAttribute="height" constant="1000" id="z5d-Up-YoY"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="9mU-64-LUT" secondAttribute="trailing" id="Al8-ct-8Ai"/>
+                                    <constraint firstItem="9mU-64-LUT" firstAttribute="leading" secondItem="U1i-sL-uHw" secondAttribute="leading" id="DIV-1s-fi2"/>
+                                    <constraint firstAttribute="bottom" secondItem="9mU-64-LUT" secondAttribute="bottom" id="k7m-C3-qvU"/>
+                                    <constraint firstItem="9mU-64-LUT" firstAttribute="top" secondItem="U1i-sL-uHw" secondAttribute="top" id="zPU-Wo-Wwr"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="U1i-sL-uHw" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="3xS-Am-uAr"/>
+                            <constraint firstItem="U1i-sL-uHw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="BCV-kO-Gy2"/>
+                            <constraint firstItem="9mU-64-LUT" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="QaC-Ma-D61"/>
+                            <constraint firstItem="U1i-sL-uHw" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="dcS-Yf-zyA"/>
+                            <constraint firstItem="U1i-sL-uHw" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="jfl-lk-t6M"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="393" height="1000"/>
+                    <connections>
+                        <outlet property="cardView" destination="enX-2W-s6X" id="aBu-Cz-RMG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.79389312977099" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

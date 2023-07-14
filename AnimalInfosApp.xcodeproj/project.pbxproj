@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		A61E2C312A60A92000DA741B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61E2C302A60A92000DA741B /* AppDelegate.swift */; };
 		A61E2C332A60A92000DA741B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61E2C322A60A92000DA741B /* SceneDelegate.swift */; };
-		A61E2C352A60A92000DA741B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61E2C342A60A92000DA741B /* ViewController.swift */; };
-		A61E2C382A60A92000DA741B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A61E2C362A60A92000DA741B /* Main.storyboard */; };
 		A61E2C3A2A60A92100DA741B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A61E2C392A60A92100DA741B /* Assets.xcassets */; };
 		A61E2C3D2A60A92100DA741B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A61E2C3B2A60A92100DA741B /* LaunchScreen.storyboard */; };
 		A61E2C482A60A92100DA741B /* AnimalInfosAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61E2C472A60A92100DA741B /* AnimalInfosAppTests.swift */; };
 		A61E2C522A60A92100DA741B /* AnimalInfosAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61E2C512A60A92100DA741B /* AnimalInfosAppUITests.swift */; };
 		A61E2C542A60A92100DA741B /* AnimalInfosAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61E2C532A60A92100DA741B /* AnimalInfosAppUITestsLaunchTests.swift */; };
+		A61E2C6A2A60AB0400DA741B /* AnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61E2C692A60AB0400DA741B /* AnimalsViewController.swift */; };
+		A6A15D592A6145C200EE6EDB /* AnimalsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A15D582A6145C200EE6EDB /* AnimalsViewController.storyboard */; };
+		A6B67F1B2A61563C0044CBAB /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6B67F1A2A61563C0044CBAB /* CardView.xib */; };
+		A6B67F1D2A6156440044CBAB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B67F1C2A6156440044CBAB /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +41,6 @@
 		A61E2C2D2A60A92000DA741B /* AnimalInfosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalInfosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A61E2C302A60A92000DA741B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A61E2C322A60A92000DA741B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A61E2C342A60A92000DA741B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A61E2C372A60A92000DA741B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A61E2C392A60A92100DA741B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A61E2C3C2A60A92100DA741B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A61E2C3E2A60A92100DA741B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +49,10 @@
 		A61E2C4D2A60A92100DA741B /* AnimalInfosAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimalInfosAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A61E2C512A60A92100DA741B /* AnimalInfosAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalInfosAppUITests.swift; sourceTree = "<group>"; };
 		A61E2C532A60A92100DA741B /* AnimalInfosAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalInfosAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A61E2C692A60AB0400DA741B /* AnimalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsViewController.swift; sourceTree = "<group>"; };
+		A6A15D582A6145C200EE6EDB /* AnimalsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnimalsViewController.storyboard; sourceTree = "<group>"; };
+		A6B67F1A2A61563C0044CBAB /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		A6B67F1C2A6156440044CBAB /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,9 @@
 		A61E2C2F2A60A92000DA741B /* AnimalInfosApp */ = {
 			isa = PBXGroup;
 			children = (
+				A61E2C602A60AA8200DA741B /* Animals Page */,
 				A61E2C302A60A92000DA741B /* AppDelegate.swift */,
 				A61E2C322A60A92000DA741B /* SceneDelegate.swift */,
-				A61E2C342A60A92000DA741B /* ViewController.swift */,
-				A61E2C362A60A92000DA741B /* Main.storyboard */,
 				A61E2C392A60A92100DA741B /* Assets.xcassets */,
 				A61E2C3B2A60A92100DA741B /* LaunchScreen.storyboard */,
 				A61E2C3E2A60A92100DA741B /* Info.plist */,
@@ -125,6 +128,25 @@
 				A61E2C532A60A92100DA741B /* AnimalInfosAppUITestsLaunchTests.swift */,
 			);
 			path = AnimalInfosAppUITests;
+			sourceTree = "<group>";
+		};
+		A61E2C602A60AA8200DA741B /* Animals Page */ = {
+			isa = PBXGroup;
+			children = (
+				A61E2C6B2A60AB4600DA741B /* _components */,
+				A61E2C692A60AB0400DA741B /* AnimalsViewController.swift */,
+				A6A15D582A6145C200EE6EDB /* AnimalsViewController.storyboard */,
+			);
+			path = "Animals Page";
+			sourceTree = "<group>";
+		};
+		A61E2C6B2A60AB4600DA741B /* _components */ = {
+			isa = PBXGroup;
+			children = (
+				A6B67F1A2A61563C0044CBAB /* CardView.xib */,
+				A6B67F1C2A6156440044CBAB /* CardView.swift */,
+			);
+			path = _components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +255,8 @@
 			files = (
 				A61E2C3D2A60A92100DA741B /* LaunchScreen.storyboard in Resources */,
 				A61E2C3A2A60A92100DA741B /* Assets.xcassets in Resources */,
-				A61E2C382A60A92000DA741B /* Main.storyboard in Resources */,
+				A6B67F1B2A61563C0044CBAB /* CardView.xib in Resources */,
+				A6A15D592A6145C200EE6EDB /* AnimalsViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A61E2C352A60A92000DA741B /* ViewController.swift in Sources */,
 				A61E2C312A60A92000DA741B /* AppDelegate.swift in Sources */,
 				A61E2C332A60A92000DA741B /* SceneDelegate.swift in Sources */,
+				A6B67F1D2A6156440044CBAB /* CardView.swift in Sources */,
+				A61E2C6A2A60AB0400DA741B /* AnimalsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +321,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A61E2C362A60A92000DA741B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A61E2C372A60A92000DA741B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A61E2C3B2A60A92100DA741B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -441,7 +457,6 @@
 				INFOPLIST_FILE = AnimalInfosApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -468,7 +483,6 @@
 				INFOPLIST_FILE = AnimalInfosApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
