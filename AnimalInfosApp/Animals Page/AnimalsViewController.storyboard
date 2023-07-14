@@ -22,19 +22,19 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9mU-64-LUT" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enX-2W-s6X" customClass="CardView" customModule="AnimalInfosApp" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="0.0" width="353" height="200"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lLJ-Fj-BUf" customClass="CardView" customModule="AnimalInfosApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="200"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="200" id="WWr-Ab-OYd"/>
+                                                    <constraint firstAttribute="height" constant="200" id="cqY-ym-RUL"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="enX-2W-s6X" firstAttribute="leading" secondItem="9mU-64-LUT" secondAttribute="leading" constant="20" id="8ym-ui-xdn"/>
-                                            <constraint firstAttribute="trailing" secondItem="enX-2W-s6X" secondAttribute="trailing" constant="20" id="9IR-Xr-C3p"/>
-                                            <constraint firstItem="enX-2W-s6X" firstAttribute="top" secondItem="9mU-64-LUT" secondAttribute="top" id="XZU-mG-aRm"/>
+                                            <constraint firstItem="lLJ-Fj-BUf" firstAttribute="width" secondItem="9mU-64-LUT" secondAttribute="width" multiplier="0.5" id="WaQ-ct-EMd"/>
+                                            <constraint firstItem="lLJ-Fj-BUf" firstAttribute="leading" secondItem="9mU-64-LUT" secondAttribute="leading" id="t9G-om-pPB"/>
+                                            <constraint firstItem="lLJ-Fj-BUf" firstAttribute="top" secondItem="9mU-64-LUT" secondAttribute="top" id="yTg-TH-qZq"/>
                                             <constraint firstAttribute="height" constant="1000" id="z5d-Up-YoY"/>
                                         </constraints>
                                     </view>
@@ -51,6 +51,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="U1i-sL-uHw" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="3xS-Am-uAr"/>
+                            <constraint firstItem="U1i-sL-uHw" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="6MG-or-95O"/>
                             <constraint firstItem="U1i-sL-uHw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="BCV-kO-Gy2"/>
                             <constraint firstItem="9mU-64-LUT" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="QaC-Ma-D61"/>
                             <constraint firstItem="U1i-sL-uHw" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="dcS-Yf-zyA"/>
@@ -59,7 +60,7 @@
                     </view>
                     <size key="freeformSize" width="393" height="1000"/>
                     <connections>
-                        <outlet property="cardView" destination="enX-2W-s6X" id="aBu-Cz-RMG"/>
+                        <outlet property="cardView" destination="lLJ-Fj-BUf" id="Vxh-Ur-F4Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -40,7 +40,7 @@ class CardView: UIView {
     private func setupView() {
         if let viewForXib = Bundle.main.loadNibNamed("CardView", owner: self)?[0] as? UIView {
             viewForXib.frame = self.bounds
-            viewForXib.layer.cornerRadius = 20
+            viewForXib.layer.cornerRadius = 16
             addSubview(viewForXib)
         }
     }

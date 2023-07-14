@@ -17,6 +17,6 @@ class AnimalsViewController:UIViewController {
         setupMyViews()
     }
     private func setupMyViews() {
-        cardView.imageName = "Bear"
+        cardView.imageName = "giraffe"
     }
 }
