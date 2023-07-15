@@ -5,6 +5,9 @@
 //  Created by Aleyna Aktaş on 14.07.2023.
 //
 import UIKit
+import AVKit
+import AVFoundation
+
 
 class CardView: UIView {
 
@@ -19,7 +22,10 @@ class CardView: UIView {
         }
     }
     var detailLink: String?
+    var videoLink: String?
+    
     var openWebAction: ((_ urlString: String) -> ())?
+    var openVideoAction: ((_ videoLink: String) -> Void)?
 
     
     @IBOutlet weak var imgView: UIImageView!
@@ -28,7 +34,6 @@ class CardView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
-//        print(imageName!)
     }
 
     required init?(coder: NSCoder) {
@@ -36,22 +41,20 @@ class CardView: UIView {
         setupView()
     }
 
-//    override func awakeFromNib() {
-//        super.awakeFromNib()
-//
-//        if let imageName = imageName {
-//            print(imageName)
-//            imgView.image = UIImage(named: imageName)
-//        }
-//
-//    }
 
     @IBAction func detailButtonAct(_ sender: UIButton) {
-        print(detailLink!)
-        openWebAction?(detailLink!)
+        if let detailLink = detailLink {
+            openWebAction?(detailLink)
+          }
     }
     
   
+    @IBAction func videoButtonAct(_ sender: UIButton) {
+        if let videoLink = videoLink {
+            openVideoAction?(videoLink)
+        }
+        
+    }
     private func setupView() {
         if let viewForXib = Bundle.main.loadNibNamed("CardView", owner: self)?[0] as? UIView {
             viewForXib.frame = self.bounds

@@ -34,6 +34,9 @@
                                 </backgroundConfiguration>
                                 <color key="baseForegroundColor" name="AccentColor"/>
                             </buttonConfiguration>
+                            <connections>
+                                <action selector="videoButtonAct:" destination="-1" eventType="touchUpInside" id="lGN-jK-pdY"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4eB-Ga-yXR">
                             <rect key="frame" x="97" y="0.0" width="87" height="30"/>
