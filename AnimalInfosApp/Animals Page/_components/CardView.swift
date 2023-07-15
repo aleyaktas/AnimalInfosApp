@@ -13,9 +13,18 @@ class CardView: UIView {
             updateImageViewWithImage()
         }
     }
+    var title: String? {
+        didSet {
+            updateImageTitle()
+        }
+    }
+    var detailLink: String?
+    var openWebAction: ((_ urlString: String) -> ())?
 
+    
     @IBOutlet weak var imgView: UIImageView!
-
+    @IBOutlet weak var imageTitle: UILabel!
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
@@ -27,16 +36,22 @@ class CardView: UIView {
         setupView()
     }
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
+//    override func awakeFromNib() {
+//        super.awakeFromNib()
+//
+//        if let imageName = imageName {
+//            print(imageName)
+//            imgView.image = UIImage(named: imageName)
+//        }
+//
+//    }
 
-        if let imageName = imageName {
-            print(imageName)
-            imgView.image = UIImage(named: imageName)
-        }
+    @IBAction func detailButtonAct(_ sender: UIButton) {
+        print(detailLink!)
+        openWebAction?(detailLink!)
     }
-
-
+    
+  
     private func setupView() {
         if let viewForXib = Bundle.main.loadNibNamed("CardView", owner: self)?[0] as? UIView {
             viewForXib.frame = self.bounds
@@ -51,5 +66,9 @@ class CardView: UIView {
         }
     }
 
-
+    private func updateImageTitle() {
+        if let title = title {
+            imageTitle.text = title
+        }
+    }
 }

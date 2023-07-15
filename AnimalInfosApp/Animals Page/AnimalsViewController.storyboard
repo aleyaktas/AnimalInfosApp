@@ -20,10 +20,10 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="907"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9mU-64-LUT" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="900"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="1000" id="z5d-Up-YoY"/>
+                                            <constraint firstAttribute="height" constant="900" id="z5d-Up-YoY"/>
                                         </constraints>
                                     </view>
                                 </subviews>

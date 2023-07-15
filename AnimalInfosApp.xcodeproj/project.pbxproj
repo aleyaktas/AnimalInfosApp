@@ -16,6 +16,8 @@
 		A61E2C542A60A92100DA741B /* AnimalInfosAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61E2C532A60A92100DA741B /* AnimalInfosAppUITestsLaunchTests.swift */; };
 		A61E2C6A2A60AB0400DA741B /* AnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61E2C692A60AB0400DA741B /* AnimalsViewController.swift */; };
 		A62843F62A62AF4900112B60 /* Animals.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62843F52A62AF4900112B60 /* Animals.swift */; };
+		A62843F92A62DAFB00112B60 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62843F82A62DAFB00112B60 /* DetailViewController.swift */; };
+		A62843FB2A62DB0400112B60 /* DetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A62843FA2A62DB0400112B60 /* DetailViewController.storyboard */; };
 		A6A15D592A6145C200EE6EDB /* AnimalsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A15D582A6145C200EE6EDB /* AnimalsViewController.storyboard */; };
 		A6B67F1B2A61563C0044CBAB /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6B67F1A2A61563C0044CBAB /* CardView.xib */; };
 		A6B67F1D2A6156440044CBAB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B67F1C2A6156440044CBAB /* CardView.swift */; };
@@ -52,6 +54,8 @@
 		A61E2C532A60A92100DA741B /* AnimalInfosAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalInfosAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A61E2C692A60AB0400DA741B /* AnimalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsViewController.swift; sourceTree = "<group>"; };
 		A62843F52A62AF4900112B60 /* Animals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animals.swift; sourceTree = "<group>"; };
+		A62843F82A62DAFB00112B60 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A62843FA2A62DB0400112B60 /* DetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailViewController.storyboard; sourceTree = "<group>"; };
 		A6A15D582A6145C200EE6EDB /* AnimalsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnimalsViewController.storyboard; sourceTree = "<group>"; };
 		A6B67F1A2A61563C0044CBAB /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		A6B67F1C2A6156440044CBAB /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 		A61E2C2F2A60A92000DA741B /* AnimalInfosApp */ = {
 			isa = PBXGroup;
 			children = (
+				A62843F72A62DAE200112B60 /* Detail Page */,
 				A61E2C602A60AA8200DA741B /* Animals Page */,
 				A61E2C302A60A92000DA741B /* AppDelegate.swift */,
 				A61E2C322A60A92000DA741B /* SceneDelegate.swift */,
@@ -150,6 +155,15 @@
 				A6B67F1C2A6156440044CBAB /* CardView.swift */,
 			);
 			path = _components;
+			sourceTree = "<group>";
+		};
+		A62843F72A62DAE200112B60 /* Detail Page */ = {
+			isa = PBXGroup;
+			children = (
+				A62843F82A62DAFB00112B60 /* DetailViewController.swift */,
+				A62843FA2A62DB0400112B60 /* DetailViewController.storyboard */,
+			);
+			path = "Detail Page";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +272,7 @@
 			files = (
 				A61E2C3D2A60A92100DA741B /* LaunchScreen.storyboard in Resources */,
 				A61E2C3A2A60A92100DA741B /* Assets.xcassets in Resources */,
+				A62843FB2A62DB0400112B60 /* DetailViewController.storyboard in Resources */,
 				A6B67F1B2A61563C0044CBAB /* CardView.xib in Resources */,
 				A6A15D592A6145C200EE6EDB /* AnimalsViewController.storyboard in Resources */,
 			);
@@ -287,6 +302,7 @@
 				A62843F62A62AF4900112B60 /* Animals.swift in Sources */,
 				A61E2C312A60A92000DA741B /* AppDelegate.swift in Sources */,
 				A61E2C332A60A92000DA741B /* SceneDelegate.swift in Sources */,
+				A62843F92A62DAFB00112B60 /* DetailViewController.swift in Sources */,
 				A6B67F1D2A6156440044CBAB /* CardView.swift in Sources */,
 				A61E2C6A2A60AB0400DA741B /* AnimalsViewController.swift in Sources */,
 			);
