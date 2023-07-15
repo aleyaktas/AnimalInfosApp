@@ -7,7 +7,7 @@
 import UIKit
 
 class CardView: UIView {
-   
+
     var imageName: String? {
         didSet {
             updateImageViewWithImage()
@@ -15,28 +15,28 @@ class CardView: UIView {
     }
 
     @IBOutlet weak var imgView: UIImageView!
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
-        print(imageName!)
+//        print(imageName!)
     }
-    
+
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         setupView()
     }
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+
         if let imageName = imageName {
             print(imageName)
             imgView.image = UIImage(named: imageName)
         }
     }
-    
-    
+
+
     private func setupView() {
         if let viewForXib = Bundle.main.loadNibNamed("CardView", owner: self)?[0] as? UIView {
             viewForXib.frame = self.bounds
@@ -44,12 +44,12 @@ class CardView: UIView {
             addSubview(viewForXib)
         }
     }
-    
+
     private func updateImageViewWithImage() {
         if let imageName = imageName {
             imgView.image = UIImage(named: imageName)
         }
     }
-    
+
 
 }

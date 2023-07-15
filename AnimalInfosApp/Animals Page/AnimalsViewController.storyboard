@@ -21,20 +21,8 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9mU-64-LUT" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lLJ-Fj-BUf" customClass="CardView" customModule="AnimalInfosApp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="200"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="200" id="cqY-ym-RUL"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="lLJ-Fj-BUf" firstAttribute="width" secondItem="9mU-64-LUT" secondAttribute="width" multiplier="0.5" id="WaQ-ct-EMd"/>
-                                            <constraint firstItem="lLJ-Fj-BUf" firstAttribute="leading" secondItem="9mU-64-LUT" secondAttribute="leading" id="t9G-om-pPB"/>
-                                            <constraint firstItem="lLJ-Fj-BUf" firstAttribute="top" secondItem="9mU-64-LUT" secondAttribute="top" id="yTg-TH-qZq"/>
                                             <constraint firstAttribute="height" constant="1000" id="z5d-Up-YoY"/>
                                         </constraints>
                                     </view>
@@ -60,7 +48,7 @@
                     </view>
                     <size key="freeformSize" width="393" height="1000"/>
                     <connections>
-                        <outlet property="cardView" destination="lLJ-Fj-BUf" id="Vxh-Ur-F4Y"/>
+                        <outlet property="contentView" destination="9mU-64-LUT" id="Mcv-o7-Ur5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

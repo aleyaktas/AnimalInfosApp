@@ -18,52 +18,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b86-Cj-wqD">
-                    <rect key="frame" x="0.0" y="0.0" width="200" height="160"/>
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                 </imageView>
-                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hba-O7-9JI">
-                    <rect key="frame" x="8" y="160" width="184" height="32"/>
-                    <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgi-0t-mfX">
-                            <rect key="frame" x="0.0" y="0.0" width="87" height="32"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Video">
-                                <backgroundConfiguration key="background" cornerRadius="16">
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="strokeColor" red="0.38431376220000002" green="0.58823531870000001" blue="0.80000001190000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </backgroundConfiguration>
-                                <color key="baseForegroundColor" red="0.38431376220000002" green="0.58823531870000001" blue="0.80000001190000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </buttonConfiguration>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1N-xz-20C">
-                            <rect key="frame" x="97" y="0.0" width="87" height="32"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Detail">
-                                <backgroundConfiguration key="background" cornerRadius="16">
-                                    <color key="backgroundColor" red="0.38431376220000002" green="0.58823531870000001" blue="0.80000001190000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </backgroundConfiguration>
-                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </buttonConfiguration>
-                        </button>
-                    </subviews>
-                </stackView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GIRAFFE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAZ-8S-PIH">
-                    <rect key="frame" x="64.666666666666657" y="0.0" width="70.666666666666657" height="20.333333333333332"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" red="0.70588237050000002" green="0.77254903320000001" blue="0.84705877299999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
-                <constraint firstItem="hba-O7-9JI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="4Lh-8e-On3"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="b86-Cj-wqD" secondAttribute="bottom" constant="40" id="8UP-5k-qdG"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hba-O7-9JI" secondAttribute="trailing" constant="8" id="FSD-GA-leI"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="hba-O7-9JI" secondAttribute="bottom" constant="8" id="GwE-bh-Cc5"/>
-                <constraint firstItem="KAZ-8S-PIH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="JZI-nS-LOz"/>
                 <constraint firstItem="b86-Cj-wqD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bCM-aQ-hZs"/>
-                <constraint firstItem="hba-O7-9JI" firstAttribute="top" secondItem="b86-Cj-wqD" secondAttribute="bottom" id="gDW-gA-2K7"/>
-                <constraint firstItem="KAZ-8S-PIH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jAR-xz-8P2"/>
+                <constraint firstAttribute="bottom" secondItem="b86-Cj-wqD" secondAttribute="bottom" id="daB-gp-S3f"/>
                 <constraint firstItem="b86-Cj-wqD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kbO-3n-pN7"/>
                 <constraint firstAttribute="trailing" secondItem="b86-Cj-wqD" secondAttribute="trailing" id="p4z-yr-dGe"/>
             </constraints>
